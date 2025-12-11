@@ -2,7 +2,6 @@ import express, { Request, Response, NextFunction } from "express";
 import dotenv from "dotenv";
 import healthRoutes from "./api/healthRoutes";
 
-
 dotenv.config();
 
 const app = express();
@@ -10,7 +9,6 @@ app.use(express.json());
 
 // Health check route
 app.use(healthRoutes);
-
 
 // Basic error handler
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
