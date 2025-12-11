@@ -1,12 +1,15 @@
 import express, { Request, Response, NextFunction } from "express";
 import dotenv from "dotenv";
-import "./api/health";
+import healthRoutes from "./api/healthRoutes";
+
 
 dotenv.config();
 
 const app = express();
-
 app.use(express.json());
+
+// Health check route
+app.use(healthRoutes);
 
 
 // Basic error handler
