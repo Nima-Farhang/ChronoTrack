@@ -1,10 +1,10 @@
-// enum for JobRunStatus 
+// enum for JobRunStatus
 export enum JobRunStatus {
-  PENDING = 'PENDING',
-  RUNNING = 'RUNNING',
-  SUCCESS = 'SUCCESS',
-  FAILED = 'FAILED',
-  CANCELLED = 'CANCELLED'
+  PENDING = "PENDING",
+  RUNNING = "RUNNING",
+  SUCCESS = "SUCCESS",
+  FAILED = "FAILED",
+  CANCELLED = "CANCELLED",
 }
 
 // interface for Job
@@ -29,4 +29,3 @@ export interface JobRun {
   cancelledAt?: Date;
   metadata?: Record<string, unknown>; // flexible JSON container
 }
-
